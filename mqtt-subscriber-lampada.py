@@ -17,7 +17,7 @@ def on_message(client, userdata, message):
     time.sleep(.5)
     print("received message = ", str(message.payload.decode("utf-8")))
 
-client= paho.Client("client-002") #create client object client1.on_publish = on_publish #assign function to callback client1.connect(broker,port) #establish connection client1.publish("house/bulb1","on")
+client= paho.Client("client-005") #create client object client1.on_publish = on_publish #assign function to callback client1.connect(broker,port) #establish connection client1.publish("house/bulb1","on")
 
 #####bind function to callback
 client.on_message = on_message
